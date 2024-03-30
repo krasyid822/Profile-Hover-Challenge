@@ -1,0 +1,135 @@
+/* CSS Reset */
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* General Style */
+body,
+button {
+  font-family: "Source Sans 3", sans-serif;
+  background-color: #6C49F6;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Main Style */
+.wrapper {
+  position: relative;
+}
+
+.profile {
+  border-radius: 50%;
+  aspect-ratio: 1;
+}
+
+.outside {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: fit-content;
+  gap: 15.97px;
+  position: absolute;
+  top: -590px;
+  left: 12px;
+}
+
+.profile-outside {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #FFF;
+  box-sizing: border-box;
+}
+
+.triangle {
+  width: 12px;
+  height: 12px;
+  background-color: rgba(255, 255, 255, .9);
+  transform: rotate(45deg);
+}
+
+.profile-inside {
+  width: 50px;
+  height: 50px;
+}
+
+.card {
+  background-color: #FFF;
+  padding: 25px;
+  border-radius: 6px;
+  width: 400px;
+  box-shadow: 0 1rem 2rem #4517C8;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.user {
+  display: flex;
+  gap: 15px;
+}
+
+.name {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.nickname {
+  font-weight: 600;
+}
+
+.username {
+  font-size: 14px;
+  color: rgba(0, 0, 0, .6);
+}
+
+.header button {
+  padding-block: 7px;
+  padding-inline: 18px;
+  border: none;
+  border-radius: 3px;
+  color: #FFF;
+  height: fit-content;
+  font-weight: 16px;
+  font-weight: 500;
+  box-shadow: 0 .25rem 2rem rgba(108, 73, 246, .75);
+}
+
+.main-text {
+  line-height: 26px;
+}
+
+.follow {
+  display: flex;
+  gap: 30px;
+}
+
+.follow div {
+  display: flex;
+  flex-direction: column;
+}
+
+.follow div .text {
+  color: rgba(0, 0, 0, .6);
+}
+
+.follow div .number {
+  font-weight: 600;
+  font-size: 22px;
+}
